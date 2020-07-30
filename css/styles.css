@@ -9,7 +9,7 @@ body{
 .bg-landing{
     width: auto;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.267),rgba(0, 0, 0, 0.315)), url("/imgs/pizza5.jpg")  no-repeat bottom center ;
+    background: linear-gradient(rgba(0, 0, 0, 0.267),rgba(0, 0, 0, 0.315)), url("https://raw.githubusercontent.com/JeremiahNgige/Dolce/gh-pages/imgs/pizza5.jpg")  no-repeat center center ;
     background-size: cover;
 }
 .bg-white{
@@ -81,9 +81,10 @@ body{
     font-size: 23px;
 }
 .testimoner-img{
-    border-radius: 50px;
+    border-radius: 50%;
     display: none;
     width: auto;
     height: 35vh;
+    padding: auto;
     background: url("https://raw.githubusercontent.com/JeremiahNgige/portfolio3/gh-pages/images/mepic.png") no-repeat bottom center ;
 }
