@@ -9,7 +9,7 @@ body{
 .bg-landing{
     width: auto;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.26),rgba(0, 0, 0, 0.329)), url("https://raw.githubusercontent.com/JeremiahNgige/Dolce/gh-pages/imgs/whisper.png")  no-repeat top center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.699),rgba(0, 0, 0, 0.651)), url("/imgs/pizza.jpg")  no-repeat center center ;
     background-size: cover;
 }
 .bg-white{
@@ -27,4 +27,63 @@ body{
     text-transform:uppercase ;
     font-weight: 800;
     letter-spacing: 2.5px;
+}
+.outer{
+    min-width: 100%;
+    height: 100%;
+    background-color:transparent;
+    display: grid;
+    place-items: center;
+}
+.inner{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    color: white;
+    margin: 10px;
+}
+.outer1{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    display: flex;
+    flex-wrap: wrap;  
+}
+.inner1{
+    flex: 1 1 150px;
+    margin: 5px;
+    background:transparent;
+    height: 100%;
+    color: black;
+    width: 100%;
+}
+.pizza-landing{
+    background-size: cover;
+    height: 200px;
+}
+.landing-txt{
+    color: white;
+}
+.landing-hd{
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 2.5px;
+}
+.landing-p{
+    font-weight: lighter;
+    font-size: 24px;
+    color: whitesmoke;
+}
+.testimoner{
+    font-style: italic;
+    color: whitesmoke;
+    margin-left: 90px;
+    font-size: 23px;
+}
+.testimoner-img{
+    border-radius: 50px;
+    display: none;
+    width: auto;
+    height: 35vh;
+    background: url("https://raw.githubusercontent.com/JeremiahNgige/portfolio3/gh-pages/images/mepic.png") no-repeat bottom center ;
 }
