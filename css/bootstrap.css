@@ -4371,6 +4371,7 @@ input[type="button"].btn-block {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
+  color: yellow
 }
 
 .navbar-brand:hover, .navbar-brand:focus {

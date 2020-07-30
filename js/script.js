@@ -7,11 +7,15 @@ $("#testimoner-yy").hover(()=>
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 100) {
     document.getElementById("navTop").style.background = "black";
-    
+    document.getElementById("navTop").style.padding = "5px";
+     
   } else {
-    document.getElementById("navTop").style.background = "rgba(0, 0, 0, 0.513)";
+    document.getElementById("navTop").style.background = "rgba(0, 0, 0, 0.196)";
+    document.getElementById("navTop").style.padding = "29px";
+    
   }
 }
-//hover testimoner img 
+//change imgs
+
