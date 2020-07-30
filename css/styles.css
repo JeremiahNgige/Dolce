@@ -101,6 +101,10 @@ body{
 .mar-left{
     margin-left: 20px;
 }
+.pad-1{
+    width: 100%;
+    height: 150px;
+}
 .welcome-sec{
     width: auto;
     height: auto;
@@ -114,11 +118,18 @@ body{
     font-weight: 600;
     font-size: 29px;
     letter-spacing: 2.5px;
-    color: yellow;
+    color: rgb(253, 193, 13);
 }
-.chef-img{
+.chef-img1{
     background: url("https://raw.githubusercontent.com/JeremiahNgige/Dolce/gh-pages/imgs/pizza10.jpg") center center;
     width: 100%;
-    height: 200px;
+    height: 250px;
     background-size: cover;
+}
+.chef-img2{
+    background: url("https://raw.githubusercontent.com/JeremiahNgige/Dolce/gh-pages/imgs/pizza9.jpg") center center;
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+}
 }
