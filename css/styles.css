@@ -9,7 +9,7 @@ body{
 .bg-landing{
     width: auto;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.699),rgba(0, 0, 0, 0.651)), url("/imgs/pizza.jpg")  no-repeat center center ;
+    background: linear-gradient(rgba(0, 0, 0, 0.267),rgba(0, 0, 0, 0.315)), url("/imgs/pizza5.jpg")  no-repeat bottom center ;
     background-size: cover;
 }
 .bg-white{
