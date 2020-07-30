@@ -121,15 +121,29 @@ body{
     color: rgb(253, 193, 13);
 }
 .chef-img1{
-    background: url("https://raw.githubusercontent.com/JeremiahNgige/Dolce/gh-pages/imgs/pizza10.jpg") center center;
+    background: linear-gradient(rgba(19, 61, 13, 0.295),rgba(19, 61, 13, 0.274)) , url("https://raw.githubusercontent.com/JeremiahNgige/Dolce/gh-pages/imgs/pizza10.jpg") center center;
     width: 100%;
     height: 250px;
     background-size: cover;
 }
 .chef-img2{
-    background: url("https://raw.githubusercontent.com/JeremiahNgige/Dolce/gh-pages/imgs/pizza9.jpg") center center;
+    background:linear-gradient(rgba(253, 193, 13, 0.055),rgba(253, 193, 13, 0.075)), url("https://raw.githubusercontent.com/JeremiahNgige/Dolce/gh-pages/imgs/pizza9.jpg") center center;
     width: 100%;
     height: 250px;
     background-size: cover;
 }
+.small-txt{
+    font-size: 25px;
+    font-family: 'Satisfy';
+    font-weight: 300;
+}
+.large-txt{
+    font-size: 33px;
+    font-weight: 600;
+}
+.txt-white{
+    color: white;
+}
+.txt-black{
+    color:rgb(1, 53, 53);
 }
