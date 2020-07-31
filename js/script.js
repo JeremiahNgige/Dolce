@@ -35,3 +35,4 @@ function scrollFunction() {
   }
 }
 //styling the select options
+//rgba(255, 255, 255, 0.5);

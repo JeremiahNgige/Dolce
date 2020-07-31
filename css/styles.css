@@ -216,6 +216,16 @@ body{
 .txt-green{
     color :#218838;
 }
+.txt-black{
+    color: black;
+}
+.txt-lg-ft{
+    font-weight: 900;
+}
+.txt-lg-ft2{
+    font-weight: 900;
+    font-size: 25px;
+}
 .slant{
     font-weight: 600;
     font-style: italic;
