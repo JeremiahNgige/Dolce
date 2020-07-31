@@ -25,7 +25,7 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 100) {
-    document.getElementById("navTop").style.background = "black";
+    document.getElementById("navTop").style.background = "#001405";
     document.getElementById("navTop").style.padding = "10px";
      
   } else {
