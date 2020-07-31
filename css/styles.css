@@ -138,7 +138,7 @@ body{
     font-weight: 600;
     font-size: 29px;
     letter-spacing: 2.5px;
-    color: rgb(253, 193, 13);
+    color: black;
 }
 .chef-img1{
     background: linear-gradient(rgba(19, 61, 13, 0.295),rgba(19, 61, 13, 0.274)) , url("https://raw.githubusercontent.com/JeremiahNgige/Dolce/gh-pages/imgs/pizza10.jpg") center center;
@@ -174,7 +174,7 @@ body{
 .services{
     width: auto;
     height: auto;
-    background: url(/imgs/pizza13.jpg);
+    background: linear-gradient(rgba(253, 193, 13, 0.055),rgba(253, 193, 13, 0.075)), url(/imgs/pizza13.jpg);
 }
 .btn-cont-holder{
     width: auto;
