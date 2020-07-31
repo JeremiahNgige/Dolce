@@ -162,7 +162,7 @@ body{
     color: black;
 }
 .chef-img1{
-    background: linear-gradient(rgba(19, 61, 13, 0.295),rgba(19, 61, 13, 0.274)) , url("https://raw.githubusercontent.com/JeremiahNgige/Dolce/gh-pages/imgs/pizza10.jpg") center center;
+    background:linear-gradient(rgba(19, 61, 13, 0.295),rgba(19, 61, 13, 0.274)), url("https://raw.githubusercontent.com/JeremiahNgige/Dolce/gh-pages/imgs/pizza10.jpg") center center;
     width: 100%;
     height: 250px;
     background-size: cover;
