@@ -34,5 +34,4 @@ function scrollFunction() {
     
   }
 }
-//change imgs 
-
+//styling the select options

@@ -77,6 +77,21 @@ body{
     color: black;
     width: auto;
 }
+.outer3{
+    width: 100%;
+    height: auto;
+    background: transparent;
+    display: flex;
+    flex-wrap: wrap;  
+}
+.inner3{
+    flex: 1 1 30px;
+    margin: 5px;
+    background:transparent;
+    height: auto;
+    color: black;
+    width: auto;
+}
 .pizza-landing{
     background-size: cover;
     height: 200px;
@@ -225,4 +240,10 @@ body{
     width: 100%;
     height: auto;
     background: #081b0cee;
+}
+.bg-landing-menu{
+    width: auto;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.664),rgba(0, 0, 0, 0.849)), url(/imgs/pizza5.jpg)  no-repeat center center ;
+    background-size: cover;
 }
