@@ -1,8 +1,25 @@
-$("document").ready(()=> 
-$("#testimoner-yy").hover(()=>
-  $(".testimoner-img").show(),()=>
-  $(".testimoner-img").hide())
-);
+$("document").ready(function(){ 
+ $("#testimoner-yy").hover(
+   function(){
+  $(".testimoner-img").show()},
+  function(){
+  $(".testimoner-img").hide()});
+  $("#crust").click(function(){
+    $("#crust-list").fadeIn(),
+    $("#toppins-list").fadeOut(),
+    $("#piz-list").fadeOut()
+  });
+  $("#topins").click(function(){
+    $("#crust-list").fadeOut(),
+    $("#toppins-list").fadeIn(),
+    $("#piz-list").fadeOut()
+  });
+  $("#piz").click(function(){
+    $("#crust-list").fadeOut(),
+    $("#toppins-list").fadeOut(),
+    $("#piz-list").fadeIn()
+  });
+  });
 //nav-bar scroll color-change
 window.onscroll = function() {scrollFunction()};
 

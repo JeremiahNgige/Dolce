@@ -181,3 +181,9 @@ body{
     height: auto;
     background: transparent;
 }
+#crust-list{
+    display: none;
+}
+#toppins-list{
+    display: none;
+}
