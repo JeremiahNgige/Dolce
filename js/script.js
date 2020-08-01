@@ -24,7 +24,7 @@ $("document").ready(function(){
     $("#piz-list").fadeIn()
   });
 
-  //add to cart margherritta button pressed
+  //add to cart margherritta 
   $("#cart1").click(function(){
     let ptopping1 = $("#topping1 option:selected").val();
     let psize1 = $("#size1 option:selected").val();
@@ -121,12 +121,13 @@ $("document").ready(function(){
    //display total1 to the page
   $("#margheritta-total").html("margheritta: ksh" +total1);
   });
-//add to cart neapolitan button clicked
-$("#cart1").click(function(){
+//add to cart neapolitan 
+$("#cart2").click(function(){
   let ptopping2 = $("#topping2 option:selected").val();
   let psize2 = $("#size2 option:selected").val();
   let pcrust2 = $("#crust2 option:selected").val();
   let amount2 = $("#amount2").val();
+
    //switch through toppings list
   switch(ptopping2){
     case "0":
@@ -218,6 +219,103 @@ $("#cart1").click(function(){
  //display total1 to the page
 $("#neapolitan-total").html("neapolitan: ksh" +total2);
 }); 
+//add to cart meat- deluxe 
+$("#cart3").click(function(){
+  let ptopping3 = $("#topping3 option:selected").val();
+  let psize3 = $("#size3 option:selected").val();
+  let pcrust3 = $("#crust3 option:selected").val();
+  let amount3 = $("#amount3").val();
+   //switch through toppings list
+  switch(ptopping3){
+    case "0":
+      toppingPrice3 =0;
+    break;
+    case "pepperoni":
+       toppingPrice3 = 200;
+       console.log(toppingPrice3);
+     break;
+     case "mushrooms":
+       toppingPrice1 = 180;
+       console.log(toppingPrice3);
+     break;
+     case "onions":
+       toppingPrice3 = 100;
+       console.log(toppingPrice13;
+    break;
+    case"extra cheese":
+      toppingPrice3 = 300;
+      console.log(toppingPrice3)
+    break;
+    case"sausages":
+      toppingPrice3 = 200;
+      console.log(toppingPrice3)
+    break;
+    case"olives":
+      toppingPrice3 = 200;
+      console.log(toppingPrice3)
+    break;
+    case"pepper":
+      toppingPrice3 = 200;
+      console.log(toppingPrice3)
+    break;
+    default:
+       console.log("error"); 
+   }
+   //switch through size list
+  switch(psize3){
+    case "0":
+      price3 =0;
+    break;
+    case "regular":
+       price3 = 500;
+       console.log(price3);
+     break;
+     case "medium":
+       price3 = 700;
+       console.log("The price is "+price3);
+     break;
+     case "large":
+       price1 = 1000;
+       console.log(price3);
+     default:
+       console.log("error"); 
+   }
+   //switch through crust list
+   switch(pcrust3){
+      case "0":
+        crustPrice3 = 0;
+      break;
+      case "crispy":
+        crustPrice3 = 120;
+        console.log(crustPrice3);
+      break;
+      case "stuffed":
+        crustPrice3 = 180;
+        console.log(crustPrice3);
+      break;
+      case "glutten-free":
+        crustPrice3 = 100;
+        console.log(crustPrice3);
+      break;
+      default:
+        console.log("No price"); 
+    }
+    //if not selected dont show the top alert
+ if ((ptopping3== "") && (psize3== "") && (pcrust3== "")){
+    console.log("nothing selected");
+    alert("please select a size , crust, topping and fill in quantity for your pizza");
+ }else{
+   $("#alert-top").slideDown(function(){
+     $("#meat-deluxe-total").show();
+   });
+ }
+ //total1 
+ total3 = (price3 + toppingPrice3 +crustPrice3)*amount3;
+ console.log(total3);
+
+ //display total1 to the page
+$("#meat-deluxe-total").html("meat duluxe: ksh" +total3);
+});
 });
 //nav-bar scroll color-change
 window.onscroll = function() {scrollFunction()};
