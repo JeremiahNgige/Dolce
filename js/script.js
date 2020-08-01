@@ -240,7 +240,7 @@ $("#cart3").click(function(){
      break;
      case "onions":
        toppingPrice3 = 100;
-       console.log(toppingPrice13;
+       console.log(toppingPrice13);
     break;
     case"extra cheese":
       toppingPrice3 = 300;
@@ -413,6 +413,7 @@ $("#cart4").click(function(){
  //display total to the page
 $("#pepperoni-total").html("pepperoni: ksh" +total4);
 });
+//add to cart chicken-beef
 $("#cart5").click(function(){
   let ptopping5 = $("#topping5 option:selected").val();
   let psize5 = $("#size5 option:selected").val();
@@ -508,6 +509,103 @@ $("#cart5").click(function(){
 
  //display total to the page
 $("#chiken-beef-total").html("chicken beef: ksh" +total5);
+});
+//add to cart veg feast
+$("#cart6").click(function(){
+  let ptopping6 = $("#topping6 option:selected").val();
+  let psize6 = $("#size6 option:selected").val();
+  let pcrust6 = $("#crust6 option:selected").val();
+  let amount6 = $("#amount6").val();
+   //switch through toppings list
+  switch(ptopping6){
+    case "0":
+      toppingPrice6 =0;
+    break;
+    case "pepperoni":
+       toppingPrice6 = 200;
+       console.log(toppingPrice6);
+     break;
+     case "mushrooms":
+       toppingPrice6 = 180;
+       console.log(toppingPrice5);
+     break;
+     case "onions":
+       toppingPrice6 = 100;
+       console.log(toppingPrice6);
+    break;
+    case"extra cheese":
+      toppingPrice6 = 300;
+      console.log(toppingPrice6)
+    break;
+    case"sausages":
+      toppingPrice6 = 200;
+      console.log(toppingPrice5)
+    break;
+    case"olives":
+      toppingPrice6 = 200;
+      console.log(toppingPrice6)
+    break;
+    case"pepper":
+      toppingPrice6 = 200;
+      console.log(toppingPrice5)
+    break;
+    default:
+       console.log("error"); 
+   }
+   //switch through size list
+  switch(psize6){
+    case "0":
+      price6 =0;
+    break;
+    case "regular":
+       price6 = 500;
+       console.log(price6);
+     break;
+     case "medium":
+       price6 = 700;
+       console.log("The price is "+price6);
+     break;
+     case "large":
+       price6 = 1000;
+       console.log(price6);
+     default:
+       console.log("error"); 
+   }
+   //switch through crust list
+   switch(pcrust6){
+      case "0":
+        crustPrice6 = 0;
+      break;
+      case "crispy":
+        crustPrice6 = 120;
+        console.log(crustPrice6);
+      break;
+      case "stuffed":
+        crustPrice6 = 180;
+        console.log(crustPrice6);
+      break;
+      case "glutten-free":
+        crustPrice6 = 100;
+        console.log(crustPrice6);
+      break;
+      default:
+        console.log("No price"); 
+    }
+    //if not selected dont show the top alert
+ if ((ptopping6== "") && (psize6== "") && (pcrust6== "")){
+    console.log("nothing selected");
+    alert("please select a size , crust, topping and fill in quantity for your pizza");
+ }else{
+   $("#alert-top").slideDown(function(){
+     $("#veg-feast-total").show();
+   });
+ }
+ //total 
+ total6 = (price6 + toppingPrice6 +crustPrice6)*amount6;
+ console.log(total6);
+
+ //display total to the page
+$("#veg-feast-total").html("veg feast: ksh" +total6);
 });
 });
 //nav-bar scroll color-change
