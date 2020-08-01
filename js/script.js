@@ -316,6 +316,199 @@ $("#cart3").click(function(){
  //display total1 to the page
 $("#meat-deluxe-total").html("meat duluxe: ksh" +total3);
 });
+//add to cart pepperoni 
+$("#cart4").click(function(){
+  let ptopping4 = $("#topping4 option:selected").val();
+  let psize4 = $("#size4 option:selected").val();
+  let pcrust4 = $("#crust4 option:selected").val();
+  let amount4 = $("#amount4").val();
+   //switch through toppings list
+  switch(ptopping4){
+    case "0":
+      toppingPrice4 =0;
+    break;
+    case "pepperoni":
+       toppingPrice4 = 200;
+       console.log(toppingPrice4);
+     break;
+     case "mushrooms":
+       toppingPrice4 = 180;
+       console.log(toppingPrice4);
+     break;
+     case "onions":
+       toppingPrice4 = 100;
+       console.log(toppingPrice4);
+    break;
+    case"extra cheese":
+      toppingPrice4 = 300;
+      console.log(toppingPrice4)
+    break;
+    case"sausages":
+      toppingPrice4 = 200;
+      console.log(toppingPrice4)
+    break;
+    case"olives":
+      toppingPrice4 = 200;
+      console.log(toppingPrice1)
+    break;
+    case"pepper":
+      toppingPrice4 = 200;
+      console.log(toppingPrice4)
+    break;
+    default:
+       console.log("error"); 
+   }
+   //switch through size list
+  switch(psize4){
+    case "0":
+      price4 =0;
+    break;
+    case "regular":
+       price4 = 500;
+       console.log(price4);
+     break;
+     case "medium":
+       price4 = 700;
+       console.log("The price is "+price4);
+     break;
+     case "large":
+       price4 = 1000;
+       console.log(price4);
+     default:
+       console.log("error"); 
+   }
+   //switch through crust list
+   switch(pcrust4){
+      case "0":
+        crustPrice4 = 0;
+      break;
+      case "crispy":
+        crustPrice4 = 120;
+        console.log(crustPrice4);
+      break;
+      case "stuffed":
+        crustPrice1 = 180;
+        console.log(crustPrice4);
+      break;
+      case "glutten-free":
+        crustPrice4 = 100;
+        console.log(crustPrice4);
+      break;
+      default:
+        console.log("No price"); 
+    }
+    //if not selected dont show the top alert
+ if ((ptopping4== "") && (psize4== "") && (pcrust4== "")){
+    console.log("nothing selected");
+    alert("please select a size , crust, topping and fill in quantity for your pizza");
+ }else{
+   $("#alert-top").slideDown(function(){
+     $("#pepperoni-total").show();
+   });
+ }
+ //total 
+ total4 = (price4 + toppingPrice4 +crustPrice4)*amount4;
+ console.log(total4);
+
+ //display total to the page
+$("#pepperoni-total").html("pepperoni: ksh" +total4);
+});
+$("#cart5").click(function(){
+  let ptopping5 = $("#topping5 option:selected").val();
+  let psize5 = $("#size5 option:selected").val();
+  let pcrust5 = $("#crust5 option:selected").val();
+  let amount5 = $("#amount5").val();
+   //switch through toppings list
+  switch(ptopping5){
+    case "0":
+      toppingPrice5 =0;
+    break;
+    case "pepperoni":
+       toppingPrice5 = 200;
+       console.log(toppingPrice5);
+     break;
+     case "mushrooms":
+       toppingPrice5 = 180;
+       console.log(toppingPrice5);
+     break;
+     case "onions":
+       toppingPrice5 = 100;
+       console.log(toppingPrice5);
+    break;
+    case"extra cheese":
+      toppingPrice5 = 300;
+      console.log(toppingPrice5)
+    break;
+    case"sausages":
+      toppingPrice5 = 200;
+      console.log(toppingPrice5)
+    break;
+    case"olives":
+      toppingPrice5 = 200;
+      console.log(toppingPrice5)
+    break;
+    case"pepper":
+      toppingPrice5 = 200;
+      console.log(toppingPrice5)
+    break;
+    default:
+       console.log("error"); 
+   }
+   //switch through size list
+  switch(psize5){
+    case "0":
+      price5 =0;
+    break;
+    case "regular":
+       price5 = 500;
+       console.log(price5);
+     break;
+     case "medium":
+       price5 = 700;
+       console.log("The price is "+price5);
+     break;
+     case "large":
+       price1 = 1000;
+       console.log(price5);
+     default:
+       console.log("error"); 
+   }
+   //switch through crust list
+   switch(pcrust5){
+      case "0":
+        crustPrice5 = 0;
+      break;
+      case "crispy":
+        crustPrice5 = 120;
+        console.log(crustPrice5);
+      break;
+      case "stuffed":
+        crustPrice5 = 180;
+        console.log(crustPrice5);
+      break;
+      case "glutten-free":
+        crustPrice5 = 100;
+        console.log(crustPrice5);
+      break;
+      default:
+        console.log("No price"); 
+    }
+    //if not selected dont show the top alert
+ if ((ptopping5== "") && (psize5== "") && (pcrust5== "")){
+    console.log("nothing selected");
+    alert("please select a size , crust, topping and fill in quantity for your pizza");
+ }else{
+   $("#alert-top").slideDown(function(){
+     $("#chicken-beef-total").show();
+   });
+ }
+ //total 
+ total5 = (price5 + toppingPrice5 +crustPrice5)*amount5;
+ console.log(total5);
+
+ //display total to the page
+$("#chiken-beef-total").html("chicken beef: ksh" +total5);
+});
 });
 //nav-bar scroll color-change
 window.onscroll = function() {scrollFunction()};
