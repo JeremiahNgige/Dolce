@@ -54,7 +54,22 @@
   </section>
   <section class="bg-lavender">
     <div class="container">
-      <div class="row align-items-center mar-top2 bg-lavender">
+      <div class="outer">
+        <div class="alert alert-warning hide" role="alert" id="alert-top">
+          <div class="outer">
+            <div class="text-center ">
+              <h2 id="margheritta-total" class="hide"></h2>
+              <h2 id="neapolitan" class="hide"> </h2>
+              <h2 id="meat-deluxe" class="hide"></h2>
+              <h2 id="veg-feats" class="hide"></h2>
+              <h2 id="chicken-beef" class="hide"></h2>
+              <h2 id="pepperoni" class="hide"></h2>
+            </div>
+            <button class="btn btn-success btn-lg">Check out</button>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center mar-top1 bg-lavender">
         <div class="col-lg-4">
           <div class="card mb-4 shadow-sm">
             <div class="card-body  pad-auto">
@@ -428,7 +443,7 @@
             </div>
             <div class="col-sm-3">
              <select class="selectpicker show-tick" data-style="btn-success" title="Select Crust" data-live-search="true" id="crust1">
-               <option style="background: #5cb85c; color: #fff;" data-tokens="glutten" value="glutten">Glutten Free @ksh100</option>
+               <option style="background: #5cb85c; color: #fff;" data-tokens="glutten" value="glutten-free">Glutten Free @ksh100</option>
                <option style="background: #5cb85c; color: #fff;" data-tokens="stuffed" value="stuffed">Stuffed @ ksh180</option>
                <option style="background: #5cb85c; color: #fff;" data-tokens="crispy"  value="crispy">Crispy @ksh120</option>
              </select>    
@@ -439,7 +454,7 @@
               <p class="pad-auto txt-green txt-lg-ft">Topping:</p>
             </div>
             <div class="col-sm-3">
-             <select class="selectpicker show-tick" data-style="btn-success" title="select Topping" data-live-search="true" id="toppings1">
+             <select class="selectpicker show-tick" data-style="btn-success" title="select Topping" data-live-search="true" id="topping1">
                <option style="background: #5cb85c; color: #fff;" data-tokens="pepperoni" value="pepperoni">Pepperoni @Ksh 200</option>
                <option style="background: #5cb85c; color: #fff;" data-tokens="mushrooms" value="mushrooms">Mushrooms @ksh 180</option>
                <option style="background: #5cb85c; color: #fff;" data-tokens="onions" value="onions">Onions @ksh 100</option>
@@ -455,7 +470,7 @@
            <p class="pad-auto txt-green txt-lg-ft">Qauntity:</p>
          </div>
          <div class="col-sm-7">
-          <input type="number" class="form-control" placeholder="Number of pizzas">  
+          <input type="number" class="form-control" placeholder="Number of pizzas" id="amount1">  
          </div>
           </div>
          </div>                          

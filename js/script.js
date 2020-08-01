@@ -25,84 +25,102 @@ $("document").ready(function(){
   });
 
   //add to cart button pressed
-  $("button.#cart1").click(function(){
-    let ptopping = $("#topping1 option:selected").val();
-    let psize = $("#size1 option:selected").val();
-    let pcrust = $("#crust1 option:selected").val();
+  $("#cart1").click(function(){
+    let ptopping1 = $("#topping1 option:selected").val();
+    let psize1 = $("#size1 option:selected").val();
+    let pcrust1 = $("#crust1 option:selected").val();
+    let amount1 = $("#amount1").val();
      //switch through toppings list
-    switch(ptopping){
+    switch(ptopping1){
       case "0":
-        toppingPrice =0;
+        toppingPrice1 =0;
       break;
       case "pepperoni":
-         toppingPrice = 200;
+         toppingPrice1 = 200;
          console.log(toppingPrice);
        break;
        case "mushrooms":
-         toppingPrice = 180;
+         toppingPrice1 = 180;
          console.log(toppingPrice);
        break;
        case "onions":
-         toppingPrice = 100;
+         toppingPrice1 = 100;
          console.log(toppingPrice);
       break;
       case"extra cheese":
-        toppingPrice = 300;
+        toppingPrice1 = 300;
         console.log(toppingPrice)
       break;
       case"sausages":
-        toppingPrice = 200;
+        toppingPrice1 = 200;
         console.log(toppingPrice)
       break;
       case"olives":
-        toppingPrice = 200;
+        toppingPrice1 = 200;
         console.log(toppingPrice)
       break;
       case"pepper":
-        toppingPrice = 200;
+        toppingPrice1 = 200;
         console.log(toppingPrice)
       break;
       default:
          console.log("error"); 
      }
      //switch through size list
-    switch(psize){
+    switch(psize1){
       case "0":
-        price =0;
+        price1 =0;
       break;
       case "regular":
-         price = 1200;
+         price1 = 500;
          console.log(price);
        break;
        case "medium":
-         price = 700;
+         price1 = 700;
          console.log("The price is "+price);
        break;
        case "large":
-         price = 1000;
+         price1 = 1000;
          console.log(price);
        default:
          console.log("error"); 
      }
      //switch through crust list
-     switch(pcrust){
+     switch(pcrust1){
         case "0":
-          crustPrice = 0;
+          crustPrice1 = 0;
         break;
-        case "Crispy":
-          crustPrice = 200;
+        case "crispy":
+          crustPrice1 = 120;
+          console.log(crustPrice);
         break;
-        case "Stuffed":
-          crustPrice = 150;
+        case "stuffed":
+          crustPrice1 = 180;
+          console.log(crustPrice);
         break;
-        case "Gluten-free":
-          crustPrice = 180;
+        case "glutten-free":
+          crustPrice1 = 100;
+          console.log(crustPrice);
         break;
         default:
           console.log("No price"); 
       }
-  });
+      //if not selected dont show the top alert
+   if ((ptopping1== "") && (psize1== "") && (pcrust1== "")){
+      console.log("nothing selected");
+      alert("please select a size , crust, topping and fill in quantity for your pizza");
+   }else{
+     $("#alert-top").slideDown(function(){
+       $("#margheritta-total").show();
+     });
+   }
+   //total1 
+   total1 = (price1 + toppingPrice1 +crustPrice1)*amount1;
+   console.log(total1);
 
+   //display total1 to the page
+  $("#margheritta-total").html("margheritta: ksh" +total1);
+  });
 });
 //nav-bar scroll color-change
 window.onscroll = function() {scrollFunction()};
@@ -121,7 +139,7 @@ function scrollFunction() {
 
 //business logic 
 
-var a ,b ,c , d ,e , f, k, u, z ,price ,crustPrice, toppingPrice  ;
+var total1 ,price1 ,crustPrice1, toppingPrice1, total2 ,price2 ,crustPrice2, toppingPrice2, total3 ,price3 ,crustPrice3, toppingPrice3, total4 ,price4 ,crustPrice4, toppingPrice4, total5 ,price5 ,crustPrice5, toppingPrice5, total6 ,price6 ,crustPrice6, toppingPrice6 ;
 /*a = function(){
   var sizeArray = [getElementById("size1")] ;
   var pizzaSize = sizeArray.options[sizeArray.selectedIndex].value;

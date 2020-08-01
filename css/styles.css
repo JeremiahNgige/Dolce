@@ -260,3 +260,6 @@ body{
 .bg-lavender{
     background: lavender;
 }
+.hide{
+    display: none;
+}
