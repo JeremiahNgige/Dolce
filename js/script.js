@@ -24,7 +24,7 @@ $("document").ready(function(){
     $("#piz-list").fadeIn()
   });
 
-  //add to cart button pressed
+  //add to cart margherritta button pressed
   $("#cart1").click(function(){
     let ptopping1 = $("#topping1 option:selected").val();
     let psize1 = $("#size1 option:selected").val();
@@ -37,31 +37,31 @@ $("document").ready(function(){
       break;
       case "pepperoni":
          toppingPrice1 = 200;
-         console.log(toppingPrice);
+         console.log(toppingPrice1);
        break;
        case "mushrooms":
          toppingPrice1 = 180;
-         console.log(toppingPrice);
+         console.log(toppingPrice1);
        break;
        case "onions":
          toppingPrice1 = 100;
-         console.log(toppingPrice);
+         console.log(toppingPrice1);
       break;
       case"extra cheese":
         toppingPrice1 = 300;
-        console.log(toppingPrice)
+        console.log(toppingPrice1)
       break;
       case"sausages":
         toppingPrice1 = 200;
-        console.log(toppingPrice)
+        console.log(toppingPrice1)
       break;
       case"olives":
         toppingPrice1 = 200;
-        console.log(toppingPrice)
+        console.log(toppingPrice1)
       break;
       case"pepper":
         toppingPrice1 = 200;
-        console.log(toppingPrice)
+        console.log(toppingPrice1)
       break;
       default:
          console.log("error"); 
@@ -73,15 +73,15 @@ $("document").ready(function(){
       break;
       case "regular":
          price1 = 500;
-         console.log(price);
+         console.log(price1);
        break;
        case "medium":
          price1 = 700;
-         console.log("The price is "+price);
+         console.log("The price is "+price1);
        break;
        case "large":
          price1 = 1000;
-         console.log(price);
+         console.log(price1);
        default:
          console.log("error"); 
      }
@@ -92,15 +92,15 @@ $("document").ready(function(){
         break;
         case "crispy":
           crustPrice1 = 120;
-          console.log(crustPrice);
+          console.log(crustPrice1);
         break;
         case "stuffed":
           crustPrice1 = 180;
-          console.log(crustPrice);
+          console.log(crustPrice1);
         break;
         case "glutten-free":
           crustPrice1 = 100;
-          console.log(crustPrice);
+          console.log(crustPrice1);
         break;
         default:
           console.log("No price"); 
@@ -121,6 +121,103 @@ $("document").ready(function(){
    //display total1 to the page
   $("#margheritta-total").html("margheritta: ksh" +total1);
   });
+//add to cart neapolitan button clicked
+$("#cart1").click(function(){
+  let ptopping2 = $("#topping2 option:selected").val();
+  let psize2 = $("#size2 option:selected").val();
+  let pcrust2 = $("#crust2 option:selected").val();
+  let amount2 = $("#amount2").val();
+   //switch through toppings list
+  switch(ptopping2){
+    case "0":
+      toppingPrice2 =0;
+    break;
+    case "pepperoni":
+       toppingPrice2 = 200;
+       console.log(toppingPrice2);
+     break;
+     case "mushrooms":
+       toppingPrice2 = 180;
+       console.log(toppingPrice2);
+     break;
+     case "onions":
+       toppingPrice2 = 100;
+       console.log(toppingPrice2);
+    break;
+    case"extra cheese":
+      toppingPrice2 = 300;
+      console.log(toppingPrice2)
+    break;
+    case"sausages":
+      toppingPrice2 = 200;
+      console.log(toppingPrice2)
+    break;
+    case"olives":
+      toppingPrice2 = 200;
+      console.log(toppingPrice2)
+    break;
+    case"pepper":
+      toppingPrice2 = 200;
+      console.log(toppingPrice2)
+    break;
+    default:
+       console.log("error"); 
+   }
+   //switch through size list
+  switch(psize2){
+    case "0":
+      price2 =0;
+    break;
+    case "regular":
+       price2 = 500;
+       console.log(price2);
+     break;
+     case "medium":
+       price2 = 700;
+       console.log("The price is "+price2);
+     break;
+     case "large":
+       price2 = 1000;
+       console.log(price2);
+     default:
+       console.log("error"); 
+   }
+   //switch through crust list
+   switch(pcrust2){
+      case "0":
+        crustPrice2 = 0;
+      break;
+      case "crispy":
+        crustPrice2 = 120;
+        console.log(crustPrice2);
+      break;
+      case "stuffed":
+        crustPrice2 = 180;
+        console.log(crustPrice2);
+      break;
+      case "glutten-free":
+        crustPrice2 = 100;
+        console.log(crustPrice2);
+      break;
+      default:
+        console.log("No price"); 
+    }
+    //if not selected dont show the top alert
+ if ((ptopping2== "") && (psize2== "") && (pcrust2== "")){
+    console.log("nothing selected");
+    alert("please select a size , crust, topping and fill in quantity for your pizza");
+ }else{
+   $("#alert-top").slideDown(function(){
+     $("#neapolitan-total").show();
+   });
+ }
+ //total1 
+ total2 = (price2 + toppingPrice2 +crustPrice2)*amount2;
+ console.log(total1);
+
+ //display total1 to the page
+$("#neapolitan-total").html("neapolitan: ksh" +total2);
+}); 
 });
 //nav-bar scroll color-change
 window.onscroll = function() {scrollFunction()};

@@ -59,11 +59,11 @@
           <div class="outer">
             <div class="text-center ">
               <h2 id="margheritta-total" class="hide"></h2>
-              <h2 id="neapolitan" class="hide"> </h2>
-              <h2 id="meat-deluxe" class="hide"></h2>
-              <h2 id="veg-feats" class="hide"></h2>
-              <h2 id="chicken-beef" class="hide"></h2>
-              <h2 id="pepperoni" class="hide"></h2>
+              <h2 id="neapolitan-total" class="hide"> </h2>
+              <h2 id="meat-deluxe-total" class="hide"></h2>
+              <h2 id="veg-feats-total" class="hide"></h2>
+              <h2 id="chicken-beef-total" class="hide"></h2>
+              <h2 id="pepperoni-total" class="hide"></h2>
             </div>
             <button class="btn btn-success btn-lg">Check out</button>
           </div>
@@ -361,10 +361,10 @@
                <p class="pad-auto txt-green txt-lg-ft">size:</p>
              </div>
              <div class="col-sm-3">
-              <select class="selectpicker show-tick" data-style="btn-success" title="select size" data-live-search="true">
-                <option style="background: #5cb85c; color: #fff;" data-tokens="regular">Regular @Ksh 500</option>
-                <option style="background: #5cb85c; color: #fff;" data-tokens="medium">Medium @ksh 700</option>
-                <option style="background: #5cb85c; color: #fff;" data-tokens="large">Large @ksh 1000</option>
+              <select class="selectpicker show-tick" data-style="btn-success" title="select size" data-live-search="true" id="size2">
+                <option style="background: #5cb85c; color: #fff;" data-tokens="regular"name="regular" value="regular">Regular @Ksh 500</option>
+                <option style="background: #5cb85c; color: #fff;" data-tokens="medium" name="medium" value="medium">Medium @ksh 700</option>
+                <option style="background: #5cb85c; color: #fff;" data-tokens="large"  name="large"  value="large">Large @ksh 1000</option>
               </select>    
              </div>
            </div>   
@@ -373,10 +373,10 @@
               <p class="pad-auto txt-green txt-lg-ft">Crust:</p>
             </div>
             <div class="col-sm-3">
-             <select class="selectpicker show-tick" data-style="btn-success" title="Select Crust" data-live-search="true">
-               <option style="background: #5cb85c; color: #fff;" data-tokens="glutten">Glutten Free @ksh100</option>
-               <option style="background: #5cb85c; color: #fff;" data-tokens="stuffed">Stuffed @ ksh180</option>
-               <option style="background: #5cb85c; color: #fff;" data-tokens="crispy">Crispy @ksh120</option>
+             <select class="selectpicker show-tick" data-style="btn-success" title="Select Crust" data-live-search="true" id="crust2">
+               <option style="background: #5cb85c; color: #fff;" data-tokens="glutten" value="glutten-free">Glutten Free @ksh100</option>
+               <option style="background: #5cb85c; color: #fff;" data-tokens="stuffed" value="stuffed">Stuffed @ ksh180</option>
+               <option style="background: #5cb85c; color: #fff;" data-tokens="crispy"  value="crispy">Crispy @ksh120</option>
              </select>    
             </div>
           </div>  
@@ -385,14 +385,14 @@
               <p class="pad-auto txt-green txt-lg-ft">Topping:</p>
             </div>
             <div class="col-sm-3">
-             <select class="selectpicker show-tick" data-style="btn-success" title="select Topping" data-live-search="true">
-               <option style="background: #5cb85c; color: #fff;" data-tokens="pepperoni">Pepperoni @Ksh 200</option>
-               <option style="background: #5cb85c; color: #fff;" data-tokens="mushrooms">Mushrooms @ksh 180</option>
-               <option style="background: #5cb85c; color: #fff;" data-tokens="onions">Onions @ksh 100</option>
-               <option style="background: #5cb85c; color: #fff;" data-tokens="extra cheese">Extra Cheese @ksh 300</option>
-               <option style="background: #5cb85c; color: #fff;" data-tokens="sausages">Sausages @ksh 200</option>
-               <option style="background: #5cb85c; color: #fff;" data-tokens="black olives">Black Olives @ksh 200</option>
-               <option style="background: #5cb85c; color: #fff;" data-tokens="green pepper">Green Peppers @ksh 200</option>
+             <select class="selectpicker show-tick" data-style="btn-success" title="select Topping" data-live-search="true" id="topping2">
+               <option style="background: #5cb85c; color: #fff;" data-tokens="pepperoni" value="pepperoni">Pepperoni @Ksh 200</option>
+               <option style="background: #5cb85c; color: #fff;" data-tokens="mushrooms" value="mushrooms">Mushrooms @ksh 180</option>
+               <option style="background: #5cb85c; color: #fff;" data-tokens="onions" value="onions">Onions @ksh 100</option>
+               <option style="background: #5cb85c; color: #fff;" data-tokens="extra cheese" value="extra cheese">Extra Cheese @ksh 300</option>
+               <option style="background: #5cb85c; color: #fff;" data-tokens="sausages" value="sausages">Sausages @ksh 200</option>
+               <option style="background: #5cb85c; color: #fff;" data-tokens="black olives" value="olives">Black Olives @ksh 200</option>
+               <option style="background: #5cb85c; color: #fff;" data-tokens="green pepper" value="pepper">Green Peppers @ksh 200</option>
              </select>    
             </div>
           </div> 
@@ -401,7 +401,7 @@
            <p class="pad-auto txt-green txt-lg-ft">Qauntity:</p>
          </div>
          <div class="col-sm-7">
-          <input type="number" class="form-control" placeholder="Number of pizzas">  
+          <input type="number" class="form-control" placeholder="Number of pizzas" id="amount2">  
          </div>
           </div>
          </div>                          
@@ -410,7 +410,7 @@
     </div>
     <div class="chef-img2">
       <div class="outer">
-        <button class="btn btn-warning btn-lg">ORDER</button>
+        <button class="btn btn-warning btn-lg" id="cart2">Add To Cart</button>
       </div>
     </div> 
 </div>
