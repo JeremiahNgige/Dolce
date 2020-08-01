@@ -257,3 +257,6 @@ body{
     background: linear-gradient(rgba(0, 0, 0, 0.664),rgba(0, 0, 0, 0.849)), url("https://raw.githubusercontent.com/JeremiahNgige/Dolce/gh-pages/imgs/pizza5.jpg")  no-repeat center center ;
     background-size: cover;
 }
+.bg-lavender{
+    background: lavender;
+}
