@@ -119,7 +119,7 @@ $("document").ready(function(){
    console.log(total1);
 
    //display total1 to the page
-  $("#margheritta-total").html("margheritta: ksh" +total1);
+  $("#margheritta-total").html(total1);
   });
 //add to cart neapolitan 
 $("#cart2").click(function(){
@@ -214,10 +214,10 @@ $("#cart2").click(function(){
  }
  //total1 
  total2 = (price2 + toppingPrice2 +crustPrice2)*amount2;
- console.log(total1);
+ console.log(total2);
 
  //display total1 to the page
-$("#neapolitan-total").html("neapolitan: ksh" +total2);
+$("#neapolitan-total").html(total2);
 }); 
 //add to cart meat- deluxe 
 $("#cart3").click(function(){
@@ -235,12 +235,12 @@ $("#cart3").click(function(){
        console.log(toppingPrice3);
      break;
      case "mushrooms":
-       toppingPrice1 = 180;
+       toppingPrice3 = 180;
        console.log(toppingPrice3);
      break;
      case "onions":
        toppingPrice3 = 100;
-       console.log(toppingPrice13);
+       console.log(toppingPrice3);
     break;
     case"extra cheese":
       toppingPrice3 = 300;
@@ -275,7 +275,7 @@ $("#cart3").click(function(){
        console.log("The price is "+price3);
      break;
      case "large":
-       price1 = 1000;
+       price3 = 1000;
        console.log(price3);
      default:
        console.log("error"); 
@@ -309,12 +309,12 @@ $("#cart3").click(function(){
      $("#meat-deluxe-total").show();
    });
  }
- //total1 
+ //total
  total3 = (price3 + toppingPrice3 +crustPrice3)*amount3;
  console.log(total3);
 
- //display total1 to the page
-$("#meat-deluxe-total").html("meat duluxe: ksh" +total3);
+ //display total to the page
+$("#meat-deluxe-total").html(total3);
 });
 //add to cart pepperoni 
 $("#cart4").click(function(){
@@ -349,7 +349,7 @@ $("#cart4").click(function(){
     break;
     case"olives":
       toppingPrice4 = 200;
-      console.log(toppingPrice1)
+      console.log(toppingPrice4)
     break;
     case"pepper":
       toppingPrice4 = 200;
@@ -387,7 +387,7 @@ $("#cart4").click(function(){
         console.log(crustPrice4);
       break;
       case "stuffed":
-        crustPrice1 = 180;
+        crustPrice4 = 180;
         console.log(crustPrice4);
       break;
       case "glutten-free":
@@ -411,7 +411,7 @@ $("#cart4").click(function(){
  console.log(total4);
 
  //display total to the page
-$("#pepperoni-total").html("pepperoni: ksh" +total4);
+$("#pepperoni-total").html(total4);
 });
 //add to cart chicken-beef
 $("#cart5").click(function(){
@@ -469,7 +469,7 @@ $("#cart5").click(function(){
        console.log("The price is "+price5);
      break;
      case "large":
-       price1 = 1000;
+       price5 = 1000;
        console.log(price5);
      default:
        console.log("error"); 
@@ -508,7 +508,7 @@ $("#cart5").click(function(){
  console.log(total5);
 
  //display total to the page
-$("#chiken-beef-total").html("chicken beef: ksh" +total5);
+$("#chicken-beef-total").html(total5);
 });
 //add to cart veg feast
 $("#cart6").click(function(){
@@ -547,7 +547,7 @@ $("#cart6").click(function(){
     break;
     case"pepper":
       toppingPrice6 = 200;
-      console.log(toppingPrice5)
+      console.log(toppingPrice6)
     break;
     default:
        console.log("error"); 
@@ -605,7 +605,38 @@ $("#cart6").click(function(){
  console.log(total6);
 
  //display total to the page
-$("#veg-feast-total").html("veg feast: ksh" +total6);
+$("#veg-feast-total").html(total6);
+});
+
+//add the total on cart
+$("#checkout").click(function(){
+  let totalArray = [total1 ,total2,total3, total4, total5,total6];
+  let newArray   = totalArray.filter(function(num){
+                    if(num!=NaN){
+                      var x = num;
+                    }
+                    return x;
+                   })
+  console.log(newArray); 
+  let totaly =0;  
+  for (var i=0;i<((newArray.length)+1);i++){
+      let newNum = parseInt(newArray[i]);
+       if(newArray[i]>0){
+         totaly +=newNum;
+         console.log(totaly)
+       }
+  } 
+
+  let totalCost= totaly +250;
+  //prompt location
+ let locale   = prompt("where do you want us to deliver your pizza");   
+
+ //if locale entered alert final amount
+ if(locale!=""){
+   alert("your Pizza to be delivered at"+" "+locale +" "+"costs ksh"+" "+totalCost) 
+ } else{
+   alert("your pizza ordered to be picked costs ksh"+" "+totaly)
+ }        
 });
 });
 //nav-bar scroll color-change
