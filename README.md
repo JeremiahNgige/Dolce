@@ -8,7 +8,14 @@
 
 ## Technologies Used
 
-Html.<br/> css.<br/> js.
+Html.<br> 
+css.<br> 
+javascript.<br>
+jquery.
+
+## Issues
+
+After a the cost summary alert is closed , you have to reload the website to make another order.
 
 ## Support and contact details
 
