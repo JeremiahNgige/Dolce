@@ -279,37 +279,37 @@ body{
     display: none;
 }
 .veg-feast-img{
-    background:linear-gradient(rgba(19, 61, 13, 0.295),rgba(8, 22, 7, 0.575)), url(/imgs/vegfeast.jpg) center center;
+    background:linear-gradient(rgba(19, 61, 13, 0.295),rgba(8, 22, 7, 0.575)), url("https://raw.githubusercontent.com/JeremiahNgige/Dolce/gh-pages/imgs/vegfeast.jpg") center center;
     width: 100%;
     height: 250px;
     background-size: cover;
 }
 .pepperoni-img{
-    background:linear-gradient(rgba(19, 61, 13, 0.295),rgba(8, 22, 7, 0.575)), url(/imgs/pepperoni.jpg) center center;
+    background:linear-gradient(rgba(19, 61, 13, 0.295),rgba(8, 22, 7, 0.575)), url("https://raw.githubusercontent.com/JeremiahNgige/Dolce/gh-pages/imgs/pepperoni.jpg") center center;
     width: 100%;
     height: 250px;
     background-size: cover;
 }
 .margheritta-img{
-    background:linear-gradient(rgba(19, 61, 13, 0.295),rgba(8, 22, 7, 0.575)), url(/imgs/Margheritta.jpg) center center;
+    background:linear-gradient(rgba(19, 61, 13, 0.295),rgba(8, 22, 7, 0.575)), url("https://raw.githubusercontent.com/JeremiahNgige/Dolce/gh-pages/imgs/Margheritta.jpg") center center;
     width: 100%;
     height: 250px;
     background-size: cover;
 }
 .meat-deluxe-img{
-    background:linear-gradient(rgba(19, 61, 13, 0.295),rgba(8, 22, 7, 0.575)), url(/imgs/meatdeluxe1.jpg) center center;
+    background:linear-gradient(rgba(19, 61, 13, 0.295),rgba(8, 22, 7, 0.575)), url("https://raw.githubusercontent.com/JeremiahNgige/Dolce/gh-pages/imgs/meatdeluxe1.jpg") center center;
     width: 100%;
     height: 250px;
     background-size: cover;
 }
 .neapolitan-img{
-    background:linear-gradient(rgba(19, 61, 13, 0.295),rgba(8, 22, 7, 0.575)), url(/imgs/neapolitan.jpg) center center;
+    background:linear-gradient(rgba(19, 61, 13, 0.295),rgba(8, 22, 7, 0.575)), url("https://raw.githubusercontent.com/JeremiahNgige/Dolce/gh-pages/imgs/neapolitan.jpg") center center;
     width: 100%;
     height: 250px;
     background-size: cover;
 }
 .chicken-beef-img{
-    background:linear-gradient(rgba(19, 61, 13, 0.295),rgba(8, 22, 7, 0.575)), url(/imgs/chickenBeef.jpg) center center;
+    background:linear-gradient(rgba(19, 61, 13, 0.295),rgba(8, 22, 7, 0.575)), url("https://raw.githubusercontent.com/JeremiahNgige/Dolce/gh-pages/imgs/chickenBeef.jpg") center center;
     width: 100%;
     height: 250px;
     background-size: cover;
@@ -317,13 +317,13 @@ body{
 .bg-landing-contact-us{
     width: auto;
     height: auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.795),rgba(0, 0, 0, 0.904)), url(/imgs/pizza2.jpg)  no-repeat center center ;
+    background: linear-gradient(rgba(0, 0, 0, 0.795),rgba(0, 0, 0, 0.904)), url("https://raw.githubusercontent.com/JeremiahNgige/Dolce/gh-pages/imgs/pizza2.jpg")  no-repeat center center ;
     background-size: cover;
 }
 .bg-landing-about-us{
     width: auto;
     height: auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.795),rgba(0, 0, 0, 0.904)), url(/imgs/pizza10.jpg)  no-repeat center center ;
+    background: linear-gradient(rgba(0, 0, 0, 0.795),rgba(0, 0, 0, 0.904)), url("https://raw.githubusercontent.com/JeremiahNgige/Dolce/gh-pages/imgs/pizza10.jpg")  no-repeat center center ;
     background-size: cover;
 }
 
