@@ -9,7 +9,7 @@
 To make an order follow this steps:<br>
 
 1). **Navigate to the menu section**<br>
-    on the task bar select menu.<br>
+    on the navigation bar select menu.<br>
 2). **select your products**<br>
     Navigate to your desired pizza and make your toppings,crust,size and Quantity selections as shown below.<br>
     ![add to cart](https://raw.githubusercontent.com/JeremiahNgige/Dolce/gh-pages/imgs/addtocart.png) <br>
