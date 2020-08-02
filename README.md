@@ -4,7 +4,7 @@
   
 ## Description
 
- Dolce Pizza is a website where you can order a pizza made by Dolce Pizza and it will be deliverred to your preffered location.Its just for practise ata moringa school though. <br/>
+ Dolce Pizza is a website where you can order a pizza made by Dolce Pizza and it will be deliverred to your preffered location.IP week 4 at moringa school. <br/>
 
 To make an order follow this steps:<br>
 
