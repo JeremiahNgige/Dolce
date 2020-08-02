@@ -114,7 +114,7 @@ $("document").ready(function(){
        $("#margheritta-total").show();
      });
    }
-   //total1 
+   //total
    total1 = (price1 + toppingPrice1 +crustPrice1)*amount1;
    console.log(total1);
 
@@ -213,7 +213,7 @@ $("#cart2").click(function(){
      $("#neapolitan-total").show();
    });
  }
- //total1 
+ //total 
  total2 = (price2 + toppingPrice2 +crustPrice2)*amount2;
  console.log(total2);
 
@@ -635,31 +635,16 @@ $("#checkout").click(function(){
  //if locale entered alert final amount
  if(locale!=""){
    alert("your Pizza to be delivered at"+" "+locale +" "+"costs ksh"+" "+totalCost)
-   $("#margheritta-total").hide()
-   $("#neapolitan-total").hide()
-   $("#pepperoni-total").hide()
-   $("#chicken-beef-total").hide()
-   $("#veg-feast-total").hide()
-   $("#meat-deluxe-total").hide()
-   $("#checkout").hide()
    $("#delivery").fadeIn(function(){
     $(this).html("your Pizza to be delivered at"+" "+locale +" "+"costs ksh"+" "+totalCost);
    })
  } else{
    alert("your pizza ordered to be picked costs ksh"+" "+totaly)
-   $("#margheritta-total").hide()
-   $("#neapolitan-total").hide()
-   $("#pepperoni-total").hide()
-   $("#chicken-beef-total").hide()
-   $("#veg-feast-total").hide()
-   $("#meat-deluxe-total").hide()
-   $("#checkout").hide()
    $("#no-delivery").fadeIn(function(){
     $(this).html("your pizza ordered to be picked costs ksh"+" "+totaly);
    })
- }        
-});
-preve
+  }        
+ });
 });
 //nav-bar scroll color-change
 window.onscroll = function() {scrollFunction()};

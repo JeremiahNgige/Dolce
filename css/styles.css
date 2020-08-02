@@ -317,8 +317,16 @@ body{
 .bg-landing-contact-us{
     width: auto;
     height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.795),rgba(0, 0, 0, 0.904)), url(/imgs/pizza2.jpg)  no-repeat center center ;
+    background-size: cover;
+}
+.bg-landing-about-us{
+    width: auto;
+    height: auto;
     background: linear-gradient(rgba(0, 0, 0, 0.795),rgba(0, 0, 0, 0.904)), url(/imgs/pizza10.jpg)  no-repeat center center ;
     background-size: cover;
 }
+
+
 
 
