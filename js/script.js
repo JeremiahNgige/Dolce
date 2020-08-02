@@ -25,7 +25,7 @@ $("document").ready(function(){
   });
 
   //add to cart margherritta 
-  $("#cart1").click(function(){
+  $("#cart1").click(function(event){
     let ptopping1 = $("#topping1 option:selected").val();
     let psize1 = $("#size1 option:selected").val();
     let pcrust1 = $("#crust1 option:selected").val();
@@ -119,7 +119,8 @@ $("document").ready(function(){
    console.log(total1);
 
    //display total1 to the page
-  $("#margheritta-total").html(total1);
+  $("#margheritta-total").html("magheritta: ksh"+total1);
+  event.preventDefault();
   });
 //add to cart neapolitan 
 $("#cart2").click(function(){
@@ -217,7 +218,7 @@ $("#cart2").click(function(){
  console.log(total2);
 
  //display total1 to the page
-$("#neapolitan-total").html(total2);
+$("#neapolitan-total").html("neapolitan: ksh"+total2);
 }); 
 //add to cart meat- deluxe 
 $("#cart3").click(function(){
@@ -314,7 +315,7 @@ $("#cart3").click(function(){
  console.log(total3);
 
  //display total to the page
-$("#meat-deluxe-total").html(total3);
+$("#meat-deluxe-total").html("meat deluxe: ksh"+total3);
 });
 //add to cart pepperoni 
 $("#cart4").click(function(){
@@ -411,7 +412,7 @@ $("#cart4").click(function(){
  console.log(total4);
 
  //display total to the page
-$("#pepperoni-total").html(total4);
+$("#pepperoni-total").html("pepperoni: ksh"+total4);
 });
 //add to cart chicken-beef
 $("#cart5").click(function(){
@@ -508,7 +509,7 @@ $("#cart5").click(function(){
  console.log(total5);
 
  //display total to the page
-$("#chicken-beef-total").html(total5);
+$("#chicken-beef-total").html("chicken beef: ksh"+total5);
 });
 //add to cart veg feast
 $("#cart6").click(function(){
@@ -605,7 +606,7 @@ $("#cart6").click(function(){
  console.log(total6);
 
  //display total to the page
-$("#veg-feast-total").html(total6);
+$("#veg-feast-total").html("veg feast: ksh"+total6);
 });
 
 //add the total on cart
@@ -633,11 +634,32 @@ $("#checkout").click(function(){
 
  //if locale entered alert final amount
  if(locale!=""){
-   alert("your Pizza to be delivered at"+" "+locale +" "+"costs ksh"+" "+totalCost) 
+   alert("your Pizza to be delivered at"+" "+locale +" "+"costs ksh"+" "+totalCost)
+   $("#margheritta-total").hide()
+   $("#neapolitan-total").hide()
+   $("#pepperoni-total").hide()
+   $("#chicken-beef-total").hide()
+   $("#veg-feast-total").hide()
+   $("#meat-deluxe-total").hide()
+   $("#checkout").hide()
+   $("#delivery").fadeIn(function(){
+    $(this).html("your Pizza to be delivered at"+" "+locale +" "+"costs ksh"+" "+totalCost);
+   })
  } else{
    alert("your pizza ordered to be picked costs ksh"+" "+totaly)
+   $("#margheritta-total").hide()
+   $("#neapolitan-total").hide()
+   $("#pepperoni-total").hide()
+   $("#chicken-beef-total").hide()
+   $("#veg-feast-total").hide()
+   $("#meat-deluxe-total").hide()
+   $("#checkout").hide()
+   $("#no-delivery").fadeIn(function(){
+    $(this).html("your pizza ordered to be picked costs ksh"+" "+totaly);
+   })
  }        
 });
+preve
 });
 //nav-bar scroll color-change
 window.onscroll = function() {scrollFunction()};
@@ -653,42 +675,4 @@ function scrollFunction() {
   }
 }
 
-
-//business logic 
-
 var total1 ,price1 ,crustPrice1, toppingPrice1, total2 ,price2 ,crustPrice2, toppingPrice2, total3 ,price3 ,crustPrice3, toppingPrice3, total4 ,price4 ,crustPrice4, toppingPrice4, total5 ,price5 ,crustPrice5, toppingPrice5, total6 ,price6 ,crustPrice6, toppingPrice6 ;
-/*a = function(){
-  var sizeArray = [getElementById("size1")] ;
-  var pizzaSize = sizeArray.options[sizeArray.selectedIndex].value;
-  if(pizzaSize==1){
-    //ksh 500 regular
-    b = "500";
-  }else if(pizzaSize == 2){
-    b = "700";
-    //ksh 700 medium
-  }else{
-    b = "1000";
-    //ksh1000 large
-  }
-  console.log(b);
-  return b;
-};
-class pizzaType{
-constructor(type){
-  this.type =type;
-}
-}
-class pizzaAttributes extends pizzaType {
-    constructor(size, crust,toppings){
-      super("pepperoni");
-      this.size =size;
-      this.crust =crust;
-      this.toppings =toppings
-    }
-}
-
-let m = getElementById('cart1');
-m.addEventListener('click',()=>{
-  pizzaAttributes(a,a,a);
-})
-*/
